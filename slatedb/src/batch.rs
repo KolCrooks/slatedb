@@ -41,7 +41,7 @@ impl Default for WriteBatch {
     }
 }
 
-pub(crate) enum WriteOp {
+pub enum WriteOp {
     Put(Bytes, Bytes, PutOptions),
     Delete(Bytes),
 }
