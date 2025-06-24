@@ -26,7 +26,7 @@ pub use fail_parallel;
 /// without having to depend on the object store crate directly.
 pub use object_store;
 
-pub use batch::WriteBatch;
+pub use batch::{WriteBatch, WriteOp};
 pub use cached_object_store::stats as cached_object_store_stats;
 pub use checkpoint::{Checkpoint, CheckpointCreateResult};
 pub use compactor::stats as compactor_stats;
