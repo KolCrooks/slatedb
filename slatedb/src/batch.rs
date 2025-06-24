@@ -82,3 +82,9 @@ impl WriteBatch {
         self.ops.push(WriteOp::Delete(Bytes::copy_from_slice(key)));
     }
 }
+
+impl From<Vec<WriteOp>> for WriteBatch {
+    fn from(ops: Vec<WriteOp>) -> Self {
+        WriteBatch { ops }
+    }
+}
